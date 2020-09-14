@@ -1,20 +1,27 @@
-﻿//Práctica 4 Ejercicio 3.
-//Nota : Programa capaz contener una clase llamada Aritmetica 
-//       en donde contenga metodos que solo puedan ser accedidos 
-//       por la misma clase.
+﻿//Práctica 4 Ejercicio 4.
+//Nota : Sobrecargando los metodos de sumas y resta... del
+//       ejercicio 3 práctica 4 con 2, 3 y 4 números.
 //
 // 
 //                                         © Anthony Reyes Duran
 
 using System;
 
-namespace Practica4e3
+namespace Practica4e4
 {
     class Aritmetica
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Suma con 2 números: {0}", Aritmetica.Sumar(10, 12));
+            Console.WriteLine("Suma con 3 números: {0}", Aritmetica.Sumar(Aritmetica.Sumar(10, 12), 15));
+            Console.WriteLine("Suma con 4 números: {0}", Aritmetica.Sumar(Aritmetica.Sumar(Aritmetica.Sumar(10, 12), 15), 19));
+
+            Console.WriteLine("Resta con 2 números: {0}", Aritmetica.Sumar(100, 50));
+            Console.WriteLine("Resta con 3 números: {0}", Aritmetica.Sumar(Aritmetica.Sumar(100, 50), 10));
+            Console.WriteLine("Resta con 4 números: {0}", Aritmetica.Sumar(Aritmetica.Sumar(Aritmetica.Sumar(100, 50), 10), 5));
             
+            Console.ReadKey();
         }
 
         //Métodos Básicos de Aritméticas.
