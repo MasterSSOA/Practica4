@@ -34,60 +34,60 @@ namespace Practica4e1
     }
 
     //Entidades del Mundo Real.
-    public class Persona
+    class Persona
     {
-        public string Nombre;
-        public string Estatura;
-        public int Edad;
+        private string _Nombre;
+        private string _Estatura;
+        private int _Edad;
 
         public Persona(string Nombre, string Estatura, int Edad)
         {
-            this.Nombre = Nombre;
-            this.Estatura = Estatura;
-            this.Edad = Edad;
+            _Nombre = Nombre;
+            _Estatura = Estatura;
+            _Edad = Edad;
         }
         public void Display()
         {
-            Console.WriteLine("Su Nombre es {0} mide {1} y tiene {2} años.\n", Nombre, Estatura, Edad);
+            Console.WriteLine("Su Nombre es {0} mide {1} y tiene {2} años.\n", _Nombre, _Estatura, _Edad);
         }
     }
 
-    public class Carro
+    class Carro
     {
-        public string Marca;
-        public string Modelo;
-        public string Color;
+        private string _Marca;
+        private string _Modelo;
+        private string _Color;
 
         public Carro(string Marca, string Modelo, string Color)
         {
-            this.Marca = Marca;
-            this.Modelo = Modelo;
-            this.Color = Color;
+           _Marca = Marca;
+           _Modelo = Modelo;
+           _Color = Color;
         }
         public void Display()
         {
-            Console.WriteLine("El Carro es de marca {0} modelo {1} y de color {2}.\n", Marca, Modelo, Color);
+            Console.WriteLine("El Carro es de marca {0} modelo {1} y de color {2}.\n", _Marca, _Modelo, _Color);
         }
     }
 
-    public class Casa
+    class Casa
     {
-        public string Color;
-        public int NumeroHabitaciones;
-        public double MetrosCuadrados;
+        private string _Color;
+        private int _NumeroHabitaciones;
+        private double _MetrosCuadrados;
         
 
         public Casa(string Color, int NumeroHabitaciones, double MetrosCuadrados)
         {
-            this.Color = Color;
-            this.NumeroHabitaciones = NumeroHabitaciones;
-            this.MetrosCuadrados = MetrosCuadrados;
+            _Color = Color;
+            _NumeroHabitaciones = NumeroHabitaciones;
+            _MetrosCuadrados = MetrosCuadrados;
         }
 
         public void Display()
         {
             Console.WriteLine("La Casa es de color {0} de {1} habitacion(es) y posee una dimenension de {2} " +
-                              "metros cuadrados.\n", Color, NumeroHabitaciones, MetrosCuadrados);
+                              "metros cuadrados.\n", _Color, _NumeroHabitaciones, _MetrosCuadrados);
         }
     }
 }
