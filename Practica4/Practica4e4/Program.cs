@@ -17,9 +17,9 @@ namespace Practica4e4
             Console.WriteLine("Suma con 3 números: {0}", Aritmetica.Sumar(Aritmetica.Sumar(10, 12), 15));
             Console.WriteLine("Suma con 4 números: {0}", Aritmetica.Sumar(Aritmetica.Sumar(Aritmetica.Sumar(10, 12), 15), 19));
 
-            Console.WriteLine("Resta con 2 números: {0}", Aritmetica.Sumar(100, 50));
-            Console.WriteLine("Resta con 3 números: {0}", Aritmetica.Sumar(Aritmetica.Sumar(100, 50), 10));
-            Console.WriteLine("Resta con 4 números: {0}", Aritmetica.Sumar(Aritmetica.Sumar(Aritmetica.Sumar(100, 50), 10), 5));
+            Console.WriteLine("Resta con 2 números: {0}", Aritmetica.Restar(100, 50));
+            Console.WriteLine("Resta con 3 números: {0}", Aritmetica.Restar(Aritmetica.Restar(100, 50), 10));
+            Console.WriteLine("Resta con 4 números: {0}", Aritmetica.Restar(Aritmetica.Restar(Aritmetica.Restar(100, 50), 10), 5));
             
             Console.ReadKey();
         }
